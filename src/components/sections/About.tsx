@@ -20,14 +20,14 @@ export function About() {
                 About Me
               </h2>
               <div className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate UI/UX designer with over 5 years of experience creating 
+                I'm a passionate <span className="text-gradient-red font-semibold">UI/UX designer</span> with over 5 years of experience creating 
                 digital products that users love. My approach combines user-centered design 
                 principles with modern aesthetics to deliver exceptional experiences.
               </div>
             </div>
             
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-foreground">
+              <h3 className="text-2xl font-semibold text-gradient-red">
                 What I Do
               </h3>
               <div className="text-muted-foreground leading-relaxed">
@@ -38,8 +38,8 @@ export function About() {
             </div>
           </div>
 
-          <GlassCard className="p-8 space-y-6" variant="hover">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">
+          <GlassCard className="p-8 space-y-6 border border-red/20 bg-gradient-red-glass" variant="hover">
+            <h3 className="text-2xl font-semibold text-gradient-red mb-6">
               Core Skills
             </h3>
             <div className="grid grid-cols-1 gap-4">

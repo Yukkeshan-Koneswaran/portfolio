@@ -4,13 +4,13 @@
 
 /* Glass morphism portfolio design system - monochromatic palette */
 
-@layer base {
+  /* Base colors - monochromatic with red as main color */
   :root {
-    /* Base colors - monochromatic glass theme with red accents */
+    /* Base colors - monochromatic with red as main color */
     --background: 0 0% 6%;
     --foreground: 0 0% 95%;
 
-    /* Glass card system */
+    /* Glass card system with red integration */
     --card: 0 0% 8%;
     --card-foreground: 0 0% 95%;
     --glass: 0 0% 100%;
@@ -21,17 +21,18 @@
     --glass-medium: 0 0% 50%;
     --glass-dark: 0 0% 15%;
 
-    /* Red accent system */
+    /* Red as main color system */
     --red: 0 72% 51%;
-    --red-dark: 0 65% 45%;
+    --red-dark: 0 65% 35%;
     --red-light: 0 75% 60%;
-    --red-muted: 0 50% 30%;
+    --red-muted: 0 50% 25%;
+    --red-glass: 0 72% 51%;
 
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 95%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 85%;
@@ -39,8 +40,8 @@
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 0 0% 20%;
-    --accent-foreground: 0 0% 90%;
+    --accent: 0 72% 51%;
+    --accent-foreground: 0 0% 95%;
 
     --destructive: 0 65% 45%;
     --destructive-foreground: 0 0% 95%;
@@ -51,17 +52,17 @@
 
     --radius: 1rem;
 
-    /* Custom glass gradients with red accents */
+    /* Custom glass gradients with red as main color */
     --gradient-glass: linear-gradient(135deg, 
       hsla(0, 0%, 100%, 0.1) 0%, 
-      hsla(0, 0%, 100%, 0.05) 100%);
+      hsla(0, 72%, 51%, 0.05) 100%);
     
     --gradient-dark: linear-gradient(135deg, 
       hsl(0, 0%, 8%) 0%, 
-      hsl(0, 0%, 4%) 100%);
+      hsl(0 50% 8%) 100%);
 
     --gradient-hero: radial-gradient(ellipse at center,
-      hsla(0, 0%, 20%, 0.8) 0%,
+      hsla(0, 72%, 25%, 0.3) 0%,
       hsla(0, 0%, 5%, 0.9) 100%);
 
     --gradient-red: linear-gradient(135deg, 
@@ -71,6 +72,15 @@
     --gradient-red-glass: linear-gradient(135deg,
       hsla(0, 72%, 51%, 0.2) 0%,
       hsla(0, 65%, 45%, 0.1) 100%);
+
+    --gradient-primary: linear-gradient(135deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--red-dark)) 100%);
+
+    --gradient-dark-red: linear-gradient(135deg,
+      hsl(0, 0%, 8%) 0%,
+      hsl(0, 30%, 10%) 50%,
+      hsl(0, 0%, 4%) 100%);
 
     /* Glass shadows */
     --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -174,7 +184,14 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ef4444 50%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-red {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

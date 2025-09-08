@@ -48,7 +48,7 @@ export function Portfolio() {
             Selected Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A curated collection of my recent projects showcasing user-centered design solutions
+            A curated collection of my recent projects showcasing <span className="text-gradient-red font-semibold">user-centered design</span> solutions
           </p>
         </div>
 
@@ -57,14 +57,14 @@ export function Portfolio() {
             <GlassCard 
               key={project.title}
               variant="hover"
-              className="p-6 space-y-4 group cursor-pointer"
+              className="p-6 space-y-4 group cursor-pointer border border-red/10 hover:border-red/30 bg-gradient-red-glass/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex justify-between items-start">
-                <span className="text-sm text-muted-foreground px-3 py-1 rounded-full bg-white/5">
+                <span className="text-sm text-muted-foreground px-3 py-1 rounded-full bg-red/10 border border-red/20">
                   {project.category}
                 </span>
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-red-light">
                   {project.year}
                 </span>
               </div>

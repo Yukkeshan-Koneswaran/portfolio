@@ -15,7 +15,7 @@ export function Navigation() {
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
       <GlassCard variant="nav" className="px-8 py-4">
         <div className="flex items-center space-x-8">
-          <div className="font-bold text-lg text-white">
+          <div className="font-bold text-lg text-gradient-red">
             Portfolio
           </div>
           
@@ -24,7 +24,7 @@ export function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white/80 hover:text-white transition-colors font-medium"
+                className="text-white/80 hover:text-red transition-colors font-medium"
               >
                 {item.label}
               </a>
@@ -33,7 +33,7 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white/80 hover:text-white"
+            className="md:hidden text-white/80 hover:text-red transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,13 +44,13 @@ export function Navigation() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-white/10">
+          <div className="md:hidden mt-4 pt-4 border-t border-red/20">
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-white/80 hover:text-white transition-colors font-medium py-2"
+                  className="text-white/80 hover:text-red transition-colors font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

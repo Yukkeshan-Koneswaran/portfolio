@@ -28,14 +28,14 @@ export function Contact() {
             Let's Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your vision to life? I'd love to hear about your project and discuss how we can create something amazing together.
+            Ready to bring your vision to life? I'd love to hear about your project and discuss how we can create something <span className="text-gradient-red font-semibold">amazing together</span>.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <GlassCard className="p-8 space-y-8">
+          <GlassCard className="p-8 space-y-8 border border-red/20 bg-gradient-red-glass/30">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-foreground">
+              <h3 className="text-2xl font-semibold text-gradient-red">
                 Get In Touch
               </h3>
               
@@ -63,7 +63,7 @@ export function Contact() {
             </div>
           </GlassCard>
 
-          <GlassCard className="p-8">
+          <GlassCard className="p-8 border border-red/15 bg-gradient-red-glass/20">
             <form className="space-y-6">
               <div className="space-y-4">
                 <div>

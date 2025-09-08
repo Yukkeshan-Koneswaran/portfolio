@@ -6,7 +6,7 @@ import { Contact } from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-dark">
+    <div className="min-h-screen bg-gradient-dark-red">
       <Navigation />
       
       <main>
@@ -28,7 +28,7 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/10">
+      <footer className="py-12 px-6 border-t border-red/20">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
             © 2024 UI/UX Designer. Crafted with passion and precision.

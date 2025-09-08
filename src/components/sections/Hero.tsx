@@ -6,10 +6,11 @@ export function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-white/10" />
-      <div className="absolute top-20 left-20 w-72 h-72 bg-red/10 rounded-full blur-3xl animate-glass-float" />
-      <div className="absolute bottom-40 right-20 w-96 h-96 bg-red/5 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '3s' }} />
-      <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-red/20 rounded-full blur-2xl animate-glass-float" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute inset-0 bg-gradient-to-br from-red/5 via-transparent to-red/10" />
+      <div className="absolute top-20 left-20 w-72 h-72 bg-red/15 rounded-full blur-3xl animate-glass-float" />
+      <div className="absolute bottom-40 right-20 w-96 h-96 bg-red/10 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-red/25 rounded-full blur-2xl animate-glass-float" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute bottom-20 left-1/3 w-48 h-48 bg-red/8 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '4s' }} />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -19,7 +20,10 @@ export function Hero() {
               <h1 className="text-5xl lg:text-7xl font-bold text-gradient leading-tight">
                 UI/UX Designer
               </h1>
-              <div className="text-xl lg:text-2xl text-muted-foreground max-w-xl">
+              <h2 className="text-xl lg:text-2xl text-gradient-red font-semibold">
+                Creative Digital Experiences
+              </h2>
+              <div className="text-lg text-muted-foreground max-w-xl">
                 Crafting digital experiences that blend aesthetic beauty with functional excellence
               </div>
             </div>
@@ -36,14 +40,14 @@ export function Hero() {
 
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-in">
-            <GlassCard className="p-1 hover:scale-105 transition-transform duration-500 border border-red/20">
+            <GlassCard className="p-1 hover:scale-105 transition-transform duration-500 border border-red/30 shadow-lg shadow-red/10">
               <div className="relative">
                 <img 
                   src={designerPortrait}
                   alt="Professional designer portrait"
                   className="w-80 h-80 object-cover rounded-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-red/5 to-transparent rounded-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-red/20 via-red/5 to-transparent rounded-xl" />
               </div>
             </GlassCard>
           </div>

@@ -59,6 +59,7 @@ export default {
           dark: "hsl(var(--red-dark))",
           light: "hsl(var(--red-light))",
           muted: "hsl(var(--red-muted))",
+          glass: "hsl(var(--red-glass))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -122,6 +123,8 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-red': 'var(--gradient-red)',
         'gradient-red-glass': 'var(--gradient-red-glass)',
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-dark-red': 'var(--gradient-dark-red)',
       },
     },
   },
