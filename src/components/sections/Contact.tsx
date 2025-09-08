@@ -5,18 +5,13 @@ export function Contact() {
   const contactInfo = [
     {
       label: "Email",
-      value: "hello@designer.com",
-      href: "mailto:hello@designer.com"
+      value: "ykshan25@gmail.com",
+      href: "mailto:ykshan25@gmail.com"
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/designer",
-      href: "https://linkedin.com/in/designer"
-    },
-    {
-      label: "Dribbble",
-      value: "dribbble.com/designer",
-      href: "https://dribbble.com/designer"
+      value: "Yukkeshan Koneswaran",
+      href: "https://www.linkedin.com/in/yukkeshan-koneswaran-5192aa263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
   ];
 

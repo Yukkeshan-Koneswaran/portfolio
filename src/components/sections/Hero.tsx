@@ -1,6 +1,6 @@
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
-import designerPortrait from "@/assets/designer-portrait.jpg";
+import designerPortrait from "@/assets/unnamed.png";
 
 export function Hero() {
   return (
@@ -13,15 +13,15 @@ export function Hero() {
       <div className="absolute bottom-20 left-1/3 w-48 h-48 bg-red/8 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '4s' }} />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-gradient leading-tight">
-                UI/UX Designer
+                Yukkeshan Koneswaran
               </h1>
               <h2 className="text-xl lg:text-2xl text-gradient-red font-semibold">
-                Creative Digital Experiences
+                UX/UI Designer
               </h2>
               <div className="text-lg text-muted-foreground max-w-xl">
                 Crafting digital experiences that blend aesthetic beauty with functional excellence

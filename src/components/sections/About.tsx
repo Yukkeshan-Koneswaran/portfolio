@@ -20,7 +20,7 @@ export function About() {
                 About Me
               </h2>
               <div className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate <span className="text-gradient-red font-semibold">UI/UX designer</span> with over 5 years of experience creating 
+                I'm a passionate <span className="text-gradient-red font-semibold">UI/UX designer</span> with over 1 year of experience creating 
                 digital products that users love. My approach combines user-centered design 
                 principles with modern aesthetics to deliver exceptional experiences.
               </div>
