@@ -47,7 +47,7 @@ export function Contact() {
                     </span>
                     <a 
                       href={contact.href}
-                      className="text-foreground hover:text-white transition-colors text-lg"
+                      className="text-foreground hover:text-red transition-colors text-lg"
                     >
                       {contact.value}
                     </a>
@@ -72,7 +72,7 @@ export function Contact() {
                   </label>
                   <input 
                     type="text"
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-white/30 text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-red/50 focus:ring-1 focus:ring-red/20 text-foreground placeholder-muted-foreground transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -83,7 +83,7 @@ export function Contact() {
                   </label>
                   <input 
                     type="email"
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-white/30 text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-red/50 focus:ring-1 focus:ring-red/20 text-foreground placeholder-muted-foreground transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -94,7 +94,7 @@ export function Contact() {
                   </label>
                   <textarea 
                     rows={6}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-white/30 text-foreground placeholder-muted-foreground resize-none"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-red/50 focus:ring-1 focus:ring-red/20 text-foreground placeholder-muted-foreground resize-none transition-colors"
                     placeholder="Tell me about your project..."
                   />
                 </div>
@@ -102,7 +102,7 @@ export function Contact() {
 
               <Button 
                 type="button"
-                className="w-full bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white"
+                className="w-full bg-gradient-red hover:bg-red/80 border border-red/30 backdrop-blur-sm text-white shadow-lg hover:shadow-red/20"
                 size="lg"
               >
                 Send Message

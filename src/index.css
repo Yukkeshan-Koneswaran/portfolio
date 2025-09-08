@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Base colors - monochromatic glass theme */
+    /* Base colors - monochromatic glass theme with red accents */
     --background: 0 0% 6%;
     --foreground: 0 0% 95%;
 
@@ -20,6 +20,12 @@
     --glass-light: 0 0% 100%;
     --glass-medium: 0 0% 50%;
     --glass-dark: 0 0% 15%;
+
+    /* Red accent system */
+    --red: 0 72% 51%;
+    --red-dark: 0 65% 45%;
+    --red-light: 0 75% 60%;
+    --red-muted: 0 50% 30%;
 
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
@@ -45,7 +51,7 @@
 
     --radius: 1rem;
 
-    /* Custom glass gradients */
+    /* Custom glass gradients with red accents */
     --gradient-glass: linear-gradient(135deg, 
       hsla(0, 0%, 100%, 0.1) 0%, 
       hsla(0, 0%, 100%, 0.05) 100%);
@@ -57,6 +63,14 @@
     --gradient-hero: radial-gradient(ellipse at center,
       hsla(0, 0%, 20%, 0.8) 0%,
       hsla(0, 0%, 5%, 0.9) 100%);
+
+    --gradient-red: linear-gradient(135deg, 
+      hsl(var(--red)) 0%, 
+      hsl(var(--red-dark)) 100%);
+
+    --gradient-red-glass: linear-gradient(135deg,
+      hsla(0, 72%, 51%, 0.2) 0%,
+      hsla(0, 65%, 45%, 0.1) 100%);
 
     /* Glass shadows */
     --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);

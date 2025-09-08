@@ -49,7 +49,7 @@ export function About() {
                   className="flex items-center space-x-3 group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-2 h-2 bg-white/60 rounded-full group-hover:bg-white transition-colors" />
+                  <div className="w-2 h-2 bg-red/60 rounded-full group-hover:bg-red transition-colors" />
                   <span className="text-foreground group-hover:text-white transition-colors">
                     {skill}
                   </span>

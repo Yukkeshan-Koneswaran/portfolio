@@ -7,8 +7,9 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-white/10" />
-      <div className="absolute top-20 left-20 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-glass-float" />
-      <div className="absolute bottom-40 right-20 w-96 h-96 bg-white/3 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-20 left-20 w-72 h-72 bg-red/10 rounded-full blur-3xl animate-glass-float" />
+      <div className="absolute bottom-40 right-20 w-96 h-96 bg-red/5 rounded-full blur-3xl animate-glass-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-red/20 rounded-full blur-2xl animate-glass-float" style={{ animationDelay: '1.5s' }} />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -24,10 +25,10 @@ export function Hero() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="default" size="lg" className="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white">
+              <Button variant="default" size="lg" className="bg-gradient-red hover:bg-red/80 border border-red/30 backdrop-blur-sm text-white shadow-lg hover:shadow-red/20">
                 View My Work
               </Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
+              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-red/10 hover:border-red/40 backdrop-blur-sm">
                 Get In Touch
               </Button>
             </div>
@@ -35,14 +36,14 @@ export function Hero() {
 
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-in">
-            <GlassCard className="p-1 hover:scale-105 transition-transform duration-500">
+            <GlassCard className="p-1 hover:scale-105 transition-transform duration-500 border border-red/20">
               <div className="relative">
                 <img 
                   src={designerPortrait}
                   alt="Professional designer portrait"
                   className="w-80 h-80 object-cover rounded-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-red/5 to-transparent rounded-xl" />
               </div>
             </GlassCard>
           </div>

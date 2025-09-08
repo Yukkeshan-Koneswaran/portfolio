@@ -79,7 +79,7 @@ export function Portfolio() {
               </div>
 
               <div className="pt-4">
-                <div className="text-sm text-white/60 group-hover:text-white transition-colors">
+                <div className="text-sm text-red/80 group-hover:text-red transition-colors">
                   View Case Study →
                 </div>
               </div>
